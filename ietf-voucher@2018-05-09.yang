@@ -59,19 +59,19 @@ module ietf-voucher {
   }
 
   // Top-level statement
-  rc:yang-data voucher-artifact {
-    uses voucher-artifact-grouping;
-  }
+  //rc:yang-data voucher-artifact {
+  //  uses voucher-artifact-grouping;
+  //}
 
   // Grouping defined for future augmentations
 
-  grouping voucher-artifact-grouping {
-    description
-      "Grouping to allow reuse/extensions in future work.";
-    container voucher {
+  //grouping voucher-artifact-grouping {
+  //    description
+  //    "Grouping to allow reuse/extensions in future work.";
+  //  container voucher {
 
-      description
-        "A voucher assigns a pledge to an owner (pinned-domain-cert).";
+  //    description
+  //      "A voucher assigns a pledge to an owner (pinned-domain-cert).";
       leaf created-on {
         type yang:date-and-time;
         mandatory true;
@@ -227,6 +227,6 @@ module ietf-voucher {
            vendor may associate validity periods with support contracts,
            which may be terminated or extended over time.";
       }
-    } // end voucher
-  } // end voucher-grouping
+//    } // end voucher
+//} // end voucher-grouping
 }
